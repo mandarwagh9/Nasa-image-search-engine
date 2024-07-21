@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.image-card {
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 12px #aaa;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px;
+}
+.image-card img {
+    width: 100%;
+}
+.image-card p {
+    padding: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+/* Add to public/css/styles.css */
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+/* Add to public/css/styles.css */
+
+.pagination {
+    margin-top: 20px;
+}
+
+.pagination a {
+    margin: 0 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: #0056b3;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.image-card {
+    margin: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 12px #aaa;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px;
+}
+.image-card img {
+    width: 100%;
+}
+.image-card p {
+    padding: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+.image-card a {
+    display: inline-block;
+    margin: 10px;
+}
+form {
+    margin-bottom: 20px;
+}
+input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+.pagination {
+    margin-top: 20px;
+}
+.pagination a {
+    margin: 0 5px;
+    padding: 10px 15px;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px;
+}
+.pagination a:hover {
+    background-color: #0056b3;
+}
