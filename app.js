@@ -1,7 +1,6 @@
 const express = require('express');
 const axios = require('axios');
 const app = express();
-const PORT = 5500;
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
@@ -26,6 +25,4 @@ app.get('/', async (req, res) => {
     }
 });
 
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-});
+module.exports = app;
