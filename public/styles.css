@@ -1,141 +1,82 @@
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 20px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
-.image-card {
-    margin: 10px;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 12px #aaa;
-    border-radius: 5px;
-    overflow: hidden;
-    width: 300px;
+
+h1 {
+  color: #4a90e2;
+  text-align: center;
 }
-.image-card img {
-    width: 100%;
-}
-.image-card p {
-    padding: 10px;
-    font-size: 1.2em;
-    color: #333;
-}
-/* Add to public/css/styles.css */
 
 form {
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 input[type="text"] {
-    padding: 10px;
-    width: 300px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+  outline: none;
 }
 
 button {
-    padding: 10px 15px;
-    font-size: 16px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
-}
-/* Add to public/css/styles.css */
-
-.pagination {
-    margin-top: 20px;
+  background-color: #357ab7;
 }
 
-.pagination a {
-    margin: 0 5px;
-    padding: 10px 15px;
-    text-decoration: none;
-    background-color: #007BFF;
-    color: #fff;
-    border-radius: 5px;
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
-.pagination a:hover {
-    background-color: #0056b3;
+li {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
 }
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+
+a {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #4a90e2;
+  text-decoration: none;
 }
-.image-card {
-    margin: 10px;
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 12px #aaa;
-    border-radius: 5px;
-    overflow: hidden;
-    width: 300px;
-}
-.image-card img {
-    width: 100%;
-}
-.image-card p {
-    padding: 10px;
-    font-size: 1.2em;
-    color: #333;
-}
-.image-card a {
-    display: inline-block;
-    margin: 10px;
-}
-form {
-    margin-bottom: 20px;
-}
-input[type="text"] {
-    padding: 10px;
-    width: 300px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-button {
-    padding: 10px 15px;
-    font-size: 16px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-button:hover {
-    background-color: #0056b3;
-}
-.pagination {
-    margin-top: 20px;
-}
-.pagination a {
-    margin: 0 5px;
-    padding: 10px 15px;
-    text-decoration: none;
-    background-color: #007BFF;
-    color: #fff;
-    border-radius: 5px;
-}
-.pagination a:hover {
-    background-color: #0056b3;
+
+a:hover {
+  text-decoration: underline;
 }
