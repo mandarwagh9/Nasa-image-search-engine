@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Results</title>
+  <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+  <h1>Search Results</h1>
+  <ul>
+    <% items.forEach(item => { %>
+      <li>
+        <h2><%= item.data[0].title %></h2>
+        <img src="<%= item.links[0].href %>" alt="<%= item.data[0].title %>">
+      </li>
+    <% }) %>
+  </ul>
+  <a href="/">Go back</a>
+</body>
+</html>
