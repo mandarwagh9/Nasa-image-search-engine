@@ -3,6 +3,16 @@
 <head>
   <title>Search Results</title>
   <link rel="stylesheet" type="text/css" href="/styles.css">
+  <script>
+    function forceDownload(url) {
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = url.substring(url.lastIndexOf('/') + 1);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  </script>
 </head>
 <body>
   <div class="container">
@@ -13,7 +23,7 @@
           <img src="<%= item.links[0].href %>" alt="<%= item.data[0].title %>">
           <div class="card-content">
             <h2><%= item.data[0].title %></h2>
-            <a href="<%= item.links[0].href %>" download>Download</a>
+            <a href="#" onclick="forceDownload('<%= item.links[0].href %>'); return false;">Download</a>
           </div>
         </div>
       <% }) %>
