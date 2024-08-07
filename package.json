@@ -1,18 +1,15 @@
 {
-  "name": "space-image-gallery",
+  "name": "nasa-image-search-engine",
   "version": "1.0.0",
+  "description": "A webpage to search, view and download space images using the NASA OPEN API",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
-    "axios": "^1.7.2",
-    "ejs": "^3.1.10",
-    "express": "^4.19.2"
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
   }
 }
