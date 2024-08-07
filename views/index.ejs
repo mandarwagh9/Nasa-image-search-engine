@@ -1,14 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>NASA Image Search Engine</title>
-  <link rel="stylesheet" type="text/css" href="/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Image Gallery</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-  <h1>NASA Image Search Engine</h1>
-  <form action="/search" method="get">
-    <input type="text" name="q" placeholder="Search for space images" required>
-    <button type="submit">Search</button>
-  </form>
+    <h1>Space Image Gallery</h1>
+    <form action="/" method="get">
+        <input type="text" name="q" placeholder="Search for images..." value="<%= searchQuery %>">
+        <button type="submit">Search</button>
+    </form>
+    <div class="gallery">
+        <% images.forEach(image => { %>
+            <div class="image-card">
+                <img src="<%= image.links[0].href %>" alt="<%= image.data[0].title %>">
+                <p><%= image.data[0].title %></p>
+                <a href="<%= image.links[0].href %>" download="<%= image.data[0].title %>.jpg">
+                    <button type="button">Download</button>
+                </a>
+            </div>
+        <% }) %>
+    </div>
+    <div class="pagination">
+        <% if (page > 1) { %>
+            <a href="/?q=<%= searchQuery %>&page=<%= Number(page) - 1 %>">Previous</a>
+        <% } %>
+        <% if (images.length > 0) { %>
+            <a href="/?q=<%= searchQuery %>&page=<%= Number(page) + 1 %>">Next</a>
+        <% } %>
+    </div>
+    <script src="/js/scripts.js"></script>
 </body>
 </html>
