@@ -7,14 +7,17 @@
 <body>
   <div class="container">
     <h1>Search Results</h1>
-    <ul>
+    <div class="grid">
       <% items.forEach(item => { %>
-        <li>
-          <h2><%= item.data[0].title %></h2>
+        <div class="card">
           <img src="<%= item.links[0].href %>" alt="<%= item.data[0].title %>">
-        </li>
+          <div class="card-content">
+            <h2><%= item.data[0].title %></h2>
+            <a href="<%= item.links[0].href %>" download>Download</a>
+          </div>
+        </div>
       <% }) %>
-    </ul>
+    </div>
     <a href="/">Go back</a>
   </div>
 </body>
